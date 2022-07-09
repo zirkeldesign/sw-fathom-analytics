@@ -1,0 +1,14 @@
+{# file to extend #}
+{% sw_extends '@Storefront/storefront/component/analytics.html.twig' %}
+
+{# add our widget url to the router array #}
+{% block component_head_analytics %}
+	{{ parent() }}
+
+	{% block component_head_analytics_fathom %}
+		{% set config = config('ZdFathomAnalytics.config') %}
+		{% if config.active %}
+			<script src="https://{{ config.useCustomDomain && config.customDomain ? config.customDomain : 'cdn.usefathom.com' }}/script.js" data-site="{{ config.siteId }}" defer></script>
+		{% endif %}
+	{% endblock %}
+{% endblock %}

@@ -1,0 +1,52 @@
+{
+    "name": "zirkeldesign/sw-fathom-analytics",
+    "description": "Embed the privacy-first analytics solution from Fathom in Shopware",
+    "license": "MIT",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "shopware",
+        "plugin",
+        "voucher",
+        "jtl"
+    ],
+    "authors": [
+        {
+            "name": "zirkel.design",
+            "homepage": "https://zirkel.design"
+        }
+    ],
+    "require": {
+        "shopware/core": "^6.4.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.25",
+        "friendsofphp/php-cs-fixer": "~3.0",
+        "shopware/administration": "^6.4.0",
+        "shopware/storefront": "^6.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZD\\Fathom\\": "src/"
+        }
+    },
+    "extra": {
+        "description": {
+            "de-DE": "Integrieren Sie die datenschutzfreundliche Analysel\u00f6sung von Fathom in Shopware",
+            "en-GB": "Embed the privacy-first analytics solution from Fathom in Shopware"
+        },
+        "label": {
+            "de-DE": "Fathom Analytics",
+            "en-GB": "Fathom Analytics"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://zirkel.design",
+            "en-GB": "https://zirkel.design"
+        },
+        "shopware-plugin-class": "ZD\\Fathom\\ZdFathomAnalytics",
+        "supportLink": {
+            "de-DE": "https://zirkel.design",
+            "en-GB": "https://zirkel.design"
+        }
+    }
+}

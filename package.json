@@ -1,0 +1,12 @@
+{
+  "name": "@zirkeldesign/sw-fathom-analytics",
+  "version": "0.1.0",
+  "description": "A plugin to embed Fathom Analytics in Shopware",
+  "main": "src/Resources/app/administration/src/main.js",
+  "author": "Daniel Sturm <d.sturm@zirkeldesign.de>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "node-ray": "^1.18.0"
+  }
+}

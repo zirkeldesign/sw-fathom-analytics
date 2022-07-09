@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <!-- <card>
+    <title>Basic Configuration</title>
+    <title lang="de-DE">Grundeinstellungen</title>
+  </card> -->
+
+    <card>
+        <title>Settings</title>
+        <title lang="de-DE">Einstellungen</title>
+
+        <input-field type="bool">
+            <name>active</name>
+            <label>Activate Fathom Analytics</label>
+            <label lang="de-DE">Fathom Analytics aktivieren</label>
+            <helpText>If actitvated, Fathom will track every user in storefront.</helpText>
+            <helpText lang="de-DE">Wenn aktiviert, wird Fathom jeden Benutzer im Shopfront verfolgen.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>siteId</name>
+            <label>Site ID</label>
+            <placeholder>e.g. XXXXXXX</placeholder>
+            <required>true</required>
+        </input-field>
+
+        <input-field type="bool">
+            <name>useCustomDomain</name>
+            <label>Use custom domain</label>
+            <label lang="de-DE">Benutzerdefinierte Domain verwenden</label>
+        </input-field>
+
+        <input-field>
+            <name>customDomain</name>
+            <label>Custom Domain</label>
+            <label lang="de-DE">Benutzerdefinierte Domain</label>
+        </input-field>
+    </card>
+</config>
